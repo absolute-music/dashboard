@@ -27,11 +27,9 @@
      <p>New Prefix</p>
      <input id="prefix>
  <p></p>
- <button id="submit" type="button">
-    Submit
-</button>
+ <button name = "button" type = "button">Click Me</button>
      <script src="text/javascript">
-      document.getElementById("submit").onclick = function() {myFunction()};
+      document.getElementByName("button").onclick = function() {myFunction()};
 
 function myFunction() {
   let discordid = document.getElementById("discord").value;
