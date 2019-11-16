@@ -34,7 +34,7 @@ function myFunction() {
   let discordid = document.getElementById("discord").value;
   let newprefix = document.getElementById("prefix").value;
   db.collection("prefix").doc(discordid).set({
-    prefix: "newprefix"
+    prefix: newprefix
 })
 }
                                   
