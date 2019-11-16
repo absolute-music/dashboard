@@ -22,14 +22,23 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
-     <p>discord server id</p>
-    <input id="discord">
-     <p>New Prefix</p>
-     <input id="prefix>
- <p></p>
- <button name = "button" type = "button">Click Me</button>
+<form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="discord">Enter your discord ID: </label>
+    <input type="text" name="discord" id="discord" required>
+  </div>
+  <div class="form-example">
+    <label for="prefix">Enter your email: </label>
+    <input type="text" name="prefix" id="prefix" required>
+  </div>
+  <div class="form-example">
+    <input id="submit" value="Set Prefix">
+  </div>
+</form>
+     
+     
      <script src="text/javascript">
-      document.getElementByName("button").onclick = function() {myFunction()};
+      document.getElementById("submit").onclick = function() {myFunction()};
 
 function myFunction() {
   let discordid = document.getElementById("discord").value;
