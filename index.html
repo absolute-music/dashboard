@@ -22,4 +22,21 @@
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
 </script>
+     <p>discord server id</p>
+    <input id="discord">
+     <p>New Prefix</p>
+     <input id="prefix>
+     <button id="submit">Submit</button>
+     <script src="text/javascript">
+      document.getElementById("submit").onclick = function() {myFunction()};
+
+function myFunction() {
+  let discordid = document.getElementById("discord").value;
+  let newprefix = document.getElementById("prefix").value;
+  db.collection("prefix").doc(discordid).set({
+    prefix: "newprefix"
+})
+}
+                                  
+      </script>
 </body>
